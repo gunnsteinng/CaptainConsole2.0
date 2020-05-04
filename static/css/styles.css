@@ -1,0 +1,142 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: #e7ebe4;
+    color: #202527;
+}
+
+.blue-bacground {
+    background-color: #3b7498;
+    color: #efa90f;
+}
+
+/*------------------ HEADER -------------------*/
+
+header {
+    position: relative;
+    top: -20px;
+}
+
+.header-text {
+    padding: 50px;
+}
+
+/*------------------ FOOTER -------------------*/
+
+.footer-text {
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.footer-link {
+    color: #efa90f;
+}
+
+.copyright-text {
+    color: #e7ebe4;
+}
+
+/*----------- GAME OF MONTH SECTION -----------*/
+
+.game-of-month-button {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.game-of-month-heading {
+    font-weight: 600;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.game-of-month-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.game-of-month-img {
+    max-height: 250px;
+}
+
+.month-game {
+    border-radius: 20px;
+    color: #202527;
+    border: solid #949494 1px;
+    box-shadow: #949494 1px 1px;
+    background-image: linear-gradient(to bottom, #5ca4b4, #7aa5b1);
+    padding: 10px 40px;
+    margin: 10px 5%;
+}
+
+/*--------- OFFER OF THE WEEK SECTION ---------*/
+
+.offer-heading {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.offer-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.offer_text {
+    padding: 20px 15%;
+}
+
+.offer-button {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.offer-img {
+    max-height: 250px;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.game-month-header {
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.offer-week {
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #202527;
+    border: solid #949494 1px;
+    box-shadow: #949494 1px 1px;
+    background-image: linear-gradient(to bottom, #5ca4b4, #7aa5b1);
+    padding: 10px 30px;
+    margin: 10px 5%;
+}
+
+/*-------------- REVIEWS SECTION --------------*/
+
+.review-heading {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.review-div {
+    margin-top: 125px;
+    padding-bottom: 150px;
+}
+
+.review-txt {
+    font-size: 0.5rem;
+}
+
+/*-------------- PRODUCT SECTION --------------*/
+
+.product-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-img {
+    margin: 20% 50px 20% 10px;
+}
