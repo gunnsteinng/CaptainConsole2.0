@@ -1,11 +1,18 @@
+{% load static %}
+{% include 'top.html' %}
 
-{% for product in products %}
-<div class="card" style="width: 18rem;">
-  <img src="{{ product.productimage_set.first.image }}"  class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)" alt="..." >
-  <div class="card-body">
-    <h5 class="card-title">{{ product.name }}</h5>
-    <p class="card-text">{{ product.description }}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+<main role="main">
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-3">
+          {% for product in products %}
+            <div class="col-md-4">
+                {% include 'product/single_product.html' with product=product %}
+            </div>
+          {% endfor %}
+      </div>
+    </div>
   </div>
-</div>
-{% endfor %}
+</main>
+{% include 'bottom.html' %}
