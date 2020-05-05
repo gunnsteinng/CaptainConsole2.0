@@ -1,5 +1,40 @@
-<header class="blue-bacground">
-    <div>
-        <h1 class="header-text">THIS IS A HEADER!</h1>
+<header class="main-header sticky-top">
+    <div class="container">
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li class="onhover">
+                    <button class="dropbtn">Shop</button>
+                        <div class="dropdown-content">
+                          <a href="/product/">Consoles</a>
+                          <a href="/product/">Games</a>
+                        </div>
+                </li>
+                <li>
+                    <a href="#">New Items</a>
+                </li>
+                <li>
+                    <a href="#">Special Offers</a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="logo">
+            <img src="/static/images/Logo.png" alt="logo"/>
+        </h1>
+        <div class="search-container">
+            <form>
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li>
+                    <a href="#">Log In</a>
+                </li>
+                <li>
+                    <a href="#">My Cart</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </header>
