@@ -1,0 +1,55 @@
+/*------------------ CHECKOUT -----------------*/
+
+.cart-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.cart-heading {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.cart-input-field {
+    border-radius: 0;
+    border: solid #949494 2px;
+}
+
+.text-position {
+    text-align: left;
+}
+
+.sub-header {
+    padding-bottom: 25px;
+}
+
+.order-summary-div {
+    border: solid #949494 2px;
+}
+
+.horizontal-line {
+    border: solid #949494 1px;
+}
+
+.checkout-button {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.redeem-button {
+    background-color: #949494;
+    border: solid #949494;
+}
+
+.badge-format {
+    background-color: #949494;
+}
+
+.summary-div {
+    border: solid #949494 1px;
+    border-radius: 5px;
+}
+
+.list-border {
+    border-bottom: solid #949494 1px;
+}

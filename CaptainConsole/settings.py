@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'permission.apps.PermissionConfig',
     'product.apps.ProductConfig',
     'shopping.apps.ShoppingConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
