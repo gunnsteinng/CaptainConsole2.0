@@ -1,0 +1,83 @@
+/*---------- LOGIN-REGISTER SECTION -----------*/
+
+.login-register-div {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.login-heading1 {
+    padding-top: 115px;
+    padding-bottom: 30px;
+}
+
+.login-heading2 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.email-login-field {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.password-login-field {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.register-heading {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.register-text {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.top-register-field {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.middle-register-field {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.bottom-register-field {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.forgot-password-link {
+    color: #3b7498;
+    margin-bottom: 65px;
+}
+
+.register-login-field {
+    border-radius: 0;
+    border: solid #949494 2px;
+}
+
+.outer-register-login {
+    border: solid #949494 2px;
+}
+
+.register-login {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.outer-register-login {
+    border: solid #949494 2px;
+    max-height: 800px;
+}
+
+.inner-register-login {
+    margin: auto;
+}
+
+.middle-register-login {
+    min-height: 35px;
+}
