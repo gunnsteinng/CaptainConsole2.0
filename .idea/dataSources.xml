@@ -7,5 +7,13 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://balarama.db.elephantsql.com:5432/hyzecetf</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Django default" uuid="b0a8e6a5-0284-471d-a82c-7294527a9a49">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/CaptainConsole/settings.py</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://balarama.db.elephantsql.com:5432/hyzecetf</jdbc-url>
+    </data-source>
   </component>
 </project>
