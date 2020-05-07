@@ -1,5 +1,6 @@
 {% load static %}
-
 {% include 'top.html' %}
-{% include 'checkout/checkout.html' %}
-{% include 'bottom.html' %}
+{% block content %}
+    {% include 'checkout/checkout.html' %}
+    {% include 'bottom.html' %}
+{% endblock %}
