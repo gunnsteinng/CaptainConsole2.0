@@ -1,0 +1,41 @@
+/* ------------------ CART ------------------- */
+
+.top-bottom {
+    margin: 50px auto;
+}
+
+.trash-button {
+    background-color: #ab0601;
+    border: solid #ab0601 1px;
+}
+
+.table-line {
+    border-top: solid #949494 1px;
+    border-bottom: solid #949494 1px;
+}
+
+.text-alignment-left {
+    text-align: left;
+}
+
+.quantity-field {
+    border-radius: 0;
+    border: solid #949494 2px;
+    max-width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.confirm-button {
+    background-image: linear-gradient(to bottom, #007a1d, #1ca107);
+    width: 285px;
+    margin-top: 40px;
+}
+
+.exit-button {
+    background-image: linear-gradient(to bottom, #ab0601, #fb6707);
+    width: 285px;
+    margin-top: 40px;
+}
+
+#007A1D
