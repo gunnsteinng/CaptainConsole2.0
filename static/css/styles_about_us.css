@@ -5,6 +5,7 @@
     font-weight: 600;
     padding-top: 50px;
     padding-bottom: 20px;
+    color: #efa90f;
 }
 
 .about-us-text {
@@ -22,5 +23,14 @@
 }
 
 .about-us-text {
+
+}
+/*-------------- ABOUT US SECTION --------------*/
+.container-openinghrs-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.opening-hours-text {
 
 }
