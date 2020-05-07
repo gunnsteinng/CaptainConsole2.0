@@ -1,34 +1,23 @@
+{% include 'top.html' %}
+{% block content %}
 <section class="product_section" id="product">
     <div class="container product-div">
         <div class="row">
             <div class="col-lg-4">
-                <img class="product-img" src="https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png"" />
+                <img class="product-img" src="{{ product.productimage_set.first.image }}" />
             </div>
             <div class="col-lg-8">
-                <h1 class="offer-heading">Super Mario Bros</h1>
+                <h1 class="offer-heading">{{ product.name }}</h1>
                 <h2>Console: NES</h2>
-                <p class="product_text">Super Mario Bros. is frequently
-                    cited as one of the greatest video games of all time,
-                    with praise on its precise controls. It is one of the
-                    bestselling games of all time, with more than 40 million
-                    physical copies. It is credited alongside the NES as one
-                    of the key factors in reviving the video game industry
-                    after the 1983 crash, and helped popularize the
-                    side-scrolling platform game genre. Koji Kondo's
-                    soundtrack is one of the earliest and most popular in
-                    video games, making music into a centerpiece of game
-                    design. The game inspired an expansive franchise
-                    including a long-running game series, an animated
-                    television series, and a feature film. Re-releases and
-                    cameos of the game are on most of Nintendo's following
-                    systems. Alongside Mario himself, Super Mario Bros. has
-                    become prominent in popular culture.</p>
-                <p class="price">Now only $ 19.99</p>
+                <p class="product_text">{{ product.description }}</p>
+                <p class="price">Price: {{ product.price }} $</p>
                 <div class="offer-button">
                     <button class="btn btn-lg btn-primary month-game"
-                            type="button">Buy Game</button>
+                            type="button">Add to Cart</button>
                 </div>
             </div>
         </div>
     </div>
 </section>
+{% endblock %}
+{% include 'bottom.html' %}
