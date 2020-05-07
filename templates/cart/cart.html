@@ -1,13 +1,13 @@
-<div class="container mb-4">
+<div class="container mb-4 top-bottom">
     <div class="row">
         <div class="col-12">
-            <div class="table-responsive">
+            <div class="table-responsive table-line">
                 <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col"> </th>
-                            <th scope="col">Product</th>
-                            <th scope="col">Available</th>
+                            <th scope="col" class="text-left">Product</th>
+                            <th scope="col" class="text-left">Available</th>
                             <th scope="col" class="text-center">Quantity</th>
                             <th scope="col" class="text-right">Price</th>
                             <th> </th>
@@ -16,35 +16,43 @@
                     <tbody>
                         <tr>
                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Dada</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">124,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                            <td class="text-left">Product Name
+                                Dada</td>
+                            <td class="text-left">In stock</td>
+                            <td><input class="form-control quantity-field" value="1" /></td>
+                            <td class="text-right">$ 124,90</td>
+                            <td class="text-right"><button class="btn btn-sm
+                             btn-danger trash-button"><i class="fa
+                             fa-trash"></i>
+                            </button> </td>
                         </tr>
                         <tr>
                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Toto</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">33,90 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                            <td class="text-left">Product Name Toto</td>
+                            <td class="text-left">In stock</td>
+                            <td><input class="form-control quantity-field" value="1" /></td>
+                            <td class="text-right">$ 33,90</td>
+                            <td class="text-right"><button class="btn btn-sm
+                             btn-danger trash-button"><i class="fa fa-trash"></i>
+                            </button> </td>
                         </tr>
                         <tr>
                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td>Product Name Titi</td>
-                            <td>In stock</td>
-                            <td><input class="form-control" type="text" value="1" /></td>
-                            <td class="text-right">70,00 €</td>
-                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                            <td class="text-left">Product Name Titi</td>
+                            <td class="text-left">In stock</td>
+                            <td><input class="form-control quantity-field" value="1" /></td>
+                            <td class="text-right">$ 70,00</td>
+                            <td class="text-right"><button class="btn btn-sm
+                             btn-danger trash-button"><i class="fa fa-trash"></i>
+                            </button> </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td>Sub-Total</td>
-                            <td class="text-right">255,90 €</td>
+                            <td class="text-right">Sub-Total</td>
+                            <td class="text-right">$ 255,90</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -52,7 +60,7 @@
                             <td></td>
                             <td></td>
                             <td>Shipping</td>
-                            <td class="text-right">6,90 €</td>
+                            <td class="text-right">$ 6,90</td>
                         </tr>
                         <tr>
                             <td></td>
@@ -60,7 +68,7 @@
                             <td></td>
                             <td></td>
                             <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>346,90 €</strong></td>
+                            <td class="text-right"><strong>$ 346,90</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -71,14 +79,14 @@
                 <!-- spurning um að hafa sitthvort litaformat á þessum
                 hnöppun þar sem annar er til að halda áfram í checkout en
                 hinn til að fara til baka -->
-                <div class="col-sm-12  col-md-6">
-                    <button class="btn btn-lg btn-block btn-light
-                    large-button">Continue
+                <div class="col-sm-12  col-md-6 text-center">
+                    <button class="btn btn-lg btn-light
+                    large-button exit-button">Continue
                         Shopping</button>
                 </div>
-                <div class="col-sm-12 col-md-6 text-right">
-                    <button class="btn btn-lg btn-block
-                    text-uppercase large-button">Checkout</button>
+                <div class="col-sm-12 col-md-6 text-center">
+                    <button class="btn btn-lg
+                    text-uppercase large-button confirm-button">Checkout</button>
                 </div>
             </div>
         </div>
