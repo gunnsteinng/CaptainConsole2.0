@@ -1,6 +1,4 @@
 /*-------------- ABOUT US SECTION --------------*/
-/*about-us-section" id="about-us"*/
-
 .about-us-heading {
     font-weight: 600;
     padding-top: 50px;
@@ -10,14 +8,13 @@
 
 .about-us-text {
     font-weight: 600;
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 .in-text-link-contact-us {
     color: black;
     font-style: italic;
 }
+
 .container-about-div {
     position: center;
     align-items: center;
@@ -27,9 +24,10 @@
     border-top: solid #949494 1px;
     width: 900px;
     margin: auto;
-    padding: 15px;
-
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
+
 /*-------------- OPENING HOURS SECTION --------------*/
 .container-openinghrs-div {
     margin-top: 50px;
@@ -44,6 +42,8 @@
 
 .opening-hours-stores-heading {
     color: #efa90f;
+    padding-bottom: 10px;
+    margin: auto;
 }
 
 .opening-hrs-table-days {
@@ -54,7 +54,10 @@
     text-align: right;
 }
 
-.opening-hours-text {
+.opening-hours-help-heading {
+    color: #efa90f;
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .opening-hours-help-table {
@@ -63,30 +66,31 @@
     width: 240px;
 }
 
-.opening-hours-help-heading {
-    color: #efa90f;
-    margin-top: 30px;
-}
-
-.container-store-locations-div {
+/*-------------- STORE LOCATION SECTION --------------*/
+.container-store-locations {
     margin-top: 50px;
     margin-bottom: 50px;
-    flex-direction: row;
 }
-/*-------------- STORE LOCATION SECTION --------------*/
+.store-location-heading{
+    padding-bottom: 20px;
+}
 
 .store-location-sect{
     margin: auto;
-    width: 240px;
+    width: 330px;
 }
 
 .store-location {
     color: #efa90f;
     text-align: right;
-    margin: 20px auto;
 
 }
 
 .store-location-info {
     text-align: right;
 }
+
+/*virtual desk dótið:
+    color: #efa90f;
+    margin-top: 30px;
+    padding-bottom: 10px; */
