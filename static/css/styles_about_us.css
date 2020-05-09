@@ -14,23 +14,79 @@
     padding-bottom: 20px;
 }
 
+.in-text-link-contact-us {
+    color: black;
+    font-style: italic;
+}
 .container-about-div {
+    position: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-bottom: solid #949494 1px;
+    border-top: solid #949494 1px;
+    width: 900px;
+    margin: auto;
+    padding: 15px;
 
 }
-
-.about-us-heading {
-
-}
-
-.about-us-text {
-
-}
-/*-------------- ABOUT US SECTION --------------*/
+/*-------------- OPENING HOURS SECTION --------------*/
 .container-openinghrs-div {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.opening-hours-text {
+.opening-hours-table {
+    margin: auto;
+    border-bottom: solid #949494 1px;
+    width: 240px;
+}
 
+.opening-hours-stores-heading {
+    color: #efa90f;
+}
+
+.opening-hrs-table-days {
+    text-align: left;
+}
+
+.opening-hrs-table-hours {
+    text-align: right;
+}
+
+.opening-hours-text {
+}
+
+.opening-hours-help-table {
+    margin: auto;
+    border-bottom: solid #949494 1px;
+    width: 240px;
+}
+
+.opening-hours-help-heading {
+    color: #efa90f;
+    margin-top: 30px;
+}
+
+.container-store-locations-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: row;
+}
+/*-------------- STORE LOCATION SECTION --------------*/
+
+.store-location-sect{
+    margin: auto;
+    width: 240px;
+}
+
+.store-location {
+    color: #efa90f;
+    text-align: right;
+    margin: 20px auto;
+
+}
+
+.store-location-info {
+    text-align: right;
 }
