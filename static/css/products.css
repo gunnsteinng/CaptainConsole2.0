@@ -1,6 +1,7 @@
 .single-product {
     border: none;
     background-color: #e7ebe4;
+    max-width: 300px;
 }
 
 .prdouct-background {
@@ -48,4 +49,12 @@
 .search-main-container {
     text-align: right;
     margin-right: 5px;
+}
+
+.search-size-position {
+    width: 400px;
+}
+
+.description-center {
+    padding-right: 0;
 }
