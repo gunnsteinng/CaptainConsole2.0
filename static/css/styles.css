@@ -67,11 +67,12 @@ img {
   cursor: pointer;
 }
 
-.container input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.container input[type=search] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    width: 300px;
 }
 
 .container.search-container button:hover {
@@ -230,6 +231,12 @@ img {
 
 .product-img {
     margin: 20% 50px 20% 10px;
+    width: 80%;
+    height: 80%;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 /*---------- LOGIN-REGISTER SECTION -----------*/

@@ -1,24 +1,36 @@
+{% load static %}
 {% include 'top.html' %}
+
 {% block content %}
+<!-- Muna að setja virkni þannig að þetta hverfi og birtist eins og á að
+gera þegar bætt er í körfuna -->
+<div class="cart-overlay">
+    {% include 'overlay_cart.html' %}
+</div>
 <section class="product_section" id="product">
     <div class="container product-div">
         <div class="row">
             <div class="col-lg-4">
                 <img class="product-img" src="{{ product.productimage_set.first.image }}" />
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-7">
                 <h1 class="offer-heading">{{ product.name }}</h1>
                 <h2>Console: NES</h2>
                 <p class="product_text">{{ product.description }}</p>
                 <p class="price">Price: {{ product.price }} $</p>
                 <div class="offer-button">
-                    <button class="btn btn-lg btn-primary month-game" type="button">Add to Cart</button>
-                    <a href="{% url 'delete_product' product.id %}" class="block btn btn-primary">Delete Product</a>
-                    <a href="{% url 'update_product' product.id %}" class="block btn btn-primary">Update Product</a>
+                    <button class="btn btn-lg month-game" type="button">Add to Cart</button>
+
+                </div>
+                <div class="staff-button">
+                    <a href="{% url 'delete_product' product.id %}" class="btn btn-lg month-game">Delete Product</a>
+                    <a href="{% url 'update_product' product.id %}" class="btn btn-lg month-game">Update Product</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 {% endblock %}
+
 {% include 'bottom.html' %}

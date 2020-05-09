@@ -1,16 +1,24 @@
 {% load static %}
 {% include 'top.html' %}
+<!-- Muna að setja virkni þannig að þetta hverfi og birtist eins og á að
+gera þegar bætt er í körfuna -->
+<div class="cart-overlay">
+    {% include 'overlay_cart.html' %}
+</div>
 
-<div class="input-group">
-    <input type="search" class="form-control" id="search-box" placeholder="Search our products here.." />
-    <div class="input-group-btn">
-        <button type="button" id="search-btn" class="btn btn-default">Search</button>
+<div class="container search-main-container">
+    <div class="input-group search-container move-right">
+        <input type="search" id="search-box" placeholder="Search..">
+        <div class="input-group-btn">
+            <button type="button" id="search-btn"><i class="fa
+            fa-search"></i></button>
+        </div>
     </div>
 </div>
 
 <main role="main">
-<div class="products">
-  <div class="album py-5 bg-light">
+<div class="prdouct-background">
+  <div class="album py-5">
     <div class="container" id="product_filter_stuff">
       <div class="row row-cols-3">
           {% for product in products %}
