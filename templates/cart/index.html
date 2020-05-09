@@ -1,5 +1,7 @@
 {% load static %}
 
 {% include 'top.html' %}
-{% include 'cart/cart.html' %}
-{% include 'bottom.html' %}
+{% block content %}
+    {% include 'cart/cart.html' %}
+    {% include 'bottom.html' %}
+{% endblock %}

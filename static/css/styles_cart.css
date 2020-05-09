@@ -18,14 +18,6 @@
     text-align: left;
 }
 
-.quantity-field {
-    border-radius: 0;
-    border: solid #949494 2px;
-    max-width: 100px;
-    text-align: center;
-    margin: auto;
-}
-
 .confirm-button {
     background-image: linear-gradient(to bottom, #007a1d, #1ca107);
     width: 285px;
@@ -36,4 +28,50 @@
     background-image: linear-gradient(to bottom, #ab0601, #fb6707);
     width: 285px;
     margin-top: 40px;
+}
+
+.update-button {
+    background-color: #ffffff;
+    border: solid #949494 2px;
+    color: #949494;
+    border-radius: 0;
+    font-size: 1.4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.update-button:hover {
+    background-color: #949494;
+    color: #ffffff;
+    border: solid #949494 2px;
+}
+
+.minus-button {
+    margin-right: -1px;
+}
+
+.form-control-cart {
+    border-radius: 0;
+    border-top: solid #949494 2px;
+    border-bottom: solid #949494 2px;
+    max-width: 75px;
+    min-width: 35px;
+    text-align: center;
+}
+
+.cart-input-group {
+    margin: auto;
+}
+
+.close-button {
+    background-color: #eef0ed;
+    color: #949494;
+    border: none;
+    border-radius: 0;
+}
+
+.close-button:hover {
+    background-color: #949494;
+    color: #ffffff;
+    border: none;
 }

@@ -1,3 +1,7 @@
+<div class="cart-overlay">
+    {% include 'overlay_cart.html' %}
+</div>
+
 <div class="container mb-4 top-bottom">
     <div class="row">
         <div class="col-12">
@@ -16,10 +20,21 @@
                     <tbody>
                         <tr>
                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td class="text-left">Product Name
-                                Dada</td>
+                            <td class="text-left">Product Name Dada</td>
                             <td class="text-left">In stock</td>
-                            <td><input class="form-control quantity-field" value="1" /></td>
+                            <td>
+                                <div class="input-group">
+                                    <div class="input-group-prepend cart-input-group">
+                                        <button type="submit" class="btn btn-secondary
+                                        update-button minus-button">-</button>
+                                    <input class="form-control
+                                    form-control-cart" value="1"">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary
+                                        update-button plus-button">+</button>
+                                    </div>
+                                </div>
+                            </td>
                             <td class="text-right">$ 124,90</td>
                             <td class="text-right"><button class="btn btn-sm
                              btn-danger trash-button"><i class="fa
@@ -30,7 +45,19 @@
                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
                             <td class="text-left">Product Name Toto</td>
                             <td class="text-left">In stock</td>
-                            <td><input class="form-control quantity-field" value="1" /></td>
+                            <td>
+                                <div class="input-group">
+                                    <div class="input-group-prepend cart-input-group">
+                                        <button type="submit" class="btn btn-secondary
+                                        update-button minus-button">-</button>
+                                    <input class="form-control
+                                    form-control-cart" value="1"">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary
+                                        update-button plus-button">+</button>
+                                    </div>
+                                </div>
+                            </td>
                             <td class="text-right">$ 33,90</td>
                             <td class="text-right"><button class="btn btn-sm
                              btn-danger trash-button"><i class="fa fa-trash"></i>
@@ -40,7 +67,19 @@
                             <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
                             <td class="text-left">Product Name Titi</td>
                             <td class="text-left">In stock</td>
-                            <td><input class="form-control quantity-field" value="1" /></td>
+                            <td>
+                                <div class="input-group">
+                                    <div class="input-group-prepend cart-input-group">
+                                        <button type="submit" class="btn btn-secondary
+                                        update-button minus-button">-</button>
+                                    <input class="form-control
+                                    form-control-cart" value="1"">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary
+                                        update-button plus-button">+</button>
+                                    </div>
+                                </div>
+                            </td>
                             <td class="text-right">$ 70,00</td>
                             <td class="text-right"><button class="btn btn-sm
                              btn-danger trash-button"><i class="fa fa-trash"></i>
@@ -51,7 +90,7 @@
                             <td></td>
                             <td></td>
                             <td></td>
-                            <td class="text-right">Sub-Total</td>
+                            <td class="text-center">Sub-Total</td>
                             <td class="text-right">$ 255,90</td>
                         </tr>
                         <tr>
@@ -76,9 +115,6 @@
         </div>
         <div class="col mb-2">
             <div class="row">
-                <!-- spurning um að hafa sitthvort litaformat á þessum
-                hnöppun þar sem annar er til að halda áfram í checkout en
-                hinn til að fara til baka -->
                 <div class="col-sm-12  col-md-6 text-center">
                     <button class="btn btn-lg btn-light
                     large-button exit-button">Continue

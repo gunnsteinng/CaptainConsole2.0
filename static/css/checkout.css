@@ -52,3 +52,8 @@
 .list-border {
     border-bottom: solid #949494 1px;
 }
+
+.shipping-address-div {
+    position: absolute;
+    visibility: hidden;
+}
