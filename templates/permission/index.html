@@ -1,18 +1,20 @@
 {% load static %}
 
 {% include 'top.html' %}
-<section class="no-color login-section" id="login">
-    <div class="container login-register-div">
-        <div class="row">
-            <div class="col-lg-5 outer-register-login">
-                {% include 'permission/register.html' %}
-            </div>
-            <div class="col-lg-2 middle-register-login">
-            </div>
-            <div class="col-lg-5 outer-register-login">
-                {% include 'permission/login.html' %}
+{% block content %}
+    <section class="no-color login-section" id="login">
+        <div class="container login-register-div">
+            <div class="row">
+                <div class="col-lg-5 outer-register-login">
+                    {% include 'permission/register.html' %}
+                </div>
+                <div class="col-lg-2 middle-register-login">
+                </div>
+                <div class="col-lg-5 outer-register-login">
+                    {% include 'permission/login.html' %}
+                </div>
             </div>
         </div>
-    </div>
-</section>
-{% include 'bottom.html' %}
+    </section>
+    {% include 'bottom.html' %}
+{% endblock %}

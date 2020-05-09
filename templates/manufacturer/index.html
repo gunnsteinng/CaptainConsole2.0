@@ -1,5 +1,6 @@
 {% load static %}
 
 {% include 'top.html' %}
-
-{% include 'bottom.html' %}
+{% block content %}
+    {% include 'bottom.html' %}
+{% endblock %}
