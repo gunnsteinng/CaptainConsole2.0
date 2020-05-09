@@ -8,16 +8,27 @@ $(document).ready(function () {
             success: function (resp) {
                 var newHtml = resp.data.map(d => {
                     return `<section class="product_section" id="product">
-                                <div class="card mb-4 shadow-sm">
-                                    <img src="${d.firstImage}" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">${d.name}</text></>
+                                <div class="card single-product">
+                                    <img src="${d.firstImage}" 
+                                    class="bd-placeholder-img card-img-top product-card-img" 
+                                    width="225" height="225" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    preserveAspectRatio="xMidYMid slice" focusable="false" 
+                                    role="img" aria-label="Placeholder: Thumbnail" />
+                                <h5 class="product-card-name">${d.name}</h5>
                                 <div class="card-body">
-                                    <p class="d-inline-block text-truncate" style="max-width: 300px;">${d.description}</p>
+                                    <p class="text-truncate align-items-center">${d.description}</p>
+                                    <p>TODO Vantar Verð</p>
                                     <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="/product/${d.id}" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                        <div class="product-button-div product-info-button">
+                                            <a href="/product/${d.id}" type="button" 
+                                                class="btn btn-sm btn-outline-secondary
+                                                product-button">Info</a>
                                         </div>
-                                        <small class="text-muted">TODO Vantar Verð</small>
+                                        <div class="product-button-div product-buy-button">
+                                            <button type="button" class="btn btn-sm
+                                            btn-outline-secondary product-button">Buy</button>
+                                        </div>
                                     </div>
                                 </div>
                                 </div>
