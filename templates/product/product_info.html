@@ -12,8 +12,9 @@
                 <p class="product_text">{{ product.description }}</p>
                 <p class="price">Price: {{ product.price }} $</p>
                 <div class="offer-button">
-                    <button class="btn btn-lg btn-primary month-game"
-                            type="button">Add to Cart</button>
+                    <button class="btn btn-lg btn-primary month-game" type="button">Add to Cart</button>
+                    <a href="{% url 'delete_product' product.id %}" class="block btn btn-primary">Delete Product</a>
+                    <a href="{% url 'update_product' product.id %}" class="block btn btn-primary">Update Product</a>
                 </div>
             </div>
         </div>

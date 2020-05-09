@@ -1,9 +1,17 @@
 {% load static %}
 {% include 'top.html' %}
 
+<div class="input-group">
+    <input type="search" class="form-control" id="search-box" placeholder="Search our products here.." />
+    <div class="input-group-btn">
+        <button type="button" id="search-btn" class="btn btn-default">Search</button>
+    </div>
+</div>
+
 <main role="main">
+<div class="products">
   <div class="album py-5 bg-light">
-    <div class="container">
+    <div class="container" id="product_filter_stuff">
       <div class="row row-cols-3">
           {% for product in products %}
             <div class="col-md-4">
@@ -13,6 +21,7 @@
       </div>
     </div>
   </div>
+</div>
 </main>
 
 {% include 'bottom.html' %}
