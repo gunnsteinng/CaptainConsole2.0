@@ -1,6 +1,19 @@
+/*-------------- CONTACT US --------------*/
+.container-contact-us {
+    width: 1000px;
+    margin: auto;
+}
 
-body {
-  padding: 20px 0;
-  font-family: Lato, sans-serif;
+.send-button {
+    background-image: linear-gradient(to bottom, #3874a0, #0794a1);
+    width: 285px;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.send-button:hover {
+    background-color: #949494;
+    color: #ffffff;
+    border: solid #949494 2px;
 }
 
