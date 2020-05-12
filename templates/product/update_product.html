@@ -5,13 +5,13 @@
             <div class="row">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-6 outer-update-product">
-                    <div class="inner-veit-ekki">
-                        <h1 class="create-product-heading1">Update-product</h1>
-                        <h5 class="create-product-heading5">Enter changes to product form below</h5>
+                    <div class="inner-update-prod-frame">
+                        <h1 class="update-product-heading1">Update-product</h1>
+                        <h5 class="update-product-heading5">Enter changes to product form below</h5>
                         <form class='form form-horizontal, #id_name=name-new' action='{% url 'update_product' id %}' method='post'>
                         {% csrf_token %}
                         {{ form }}
-                        <input type='submit' value='Update' class='btn btn-primary update-product-buttom' style='clear:both; margin:10px 0' />
+                        <input type='submit' value='Update' class='btn btn-primary update-product-button' style='clear:both; margin:10px 0' />
                         </form>
                     </div>
                 </div>
