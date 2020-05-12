@@ -1,1 +1,32 @@
 /* Styles frá Evu */
+
+.navbar-brand img{
+    max-height: 150px;
+    width: auto;
+    object-position: center;
+    transition: 0.4s;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #3b7498;
+    transition: 0.4s;
+    top: 0;
+    z-index: 99;
+}
+
+.navbar a {
+    color: #efa90f;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu {
+    margin-top: 0;
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.navbar .nav-item.dropdown .dropdown-menu:hover{
+    display: block;
+}
