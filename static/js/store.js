@@ -5,13 +5,13 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    var removeCartItemButtons = document.getElementsByClassName('trash-button')
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
         button.addEventListener('click', removeCartItem)
     }
 
-    var quantityInputs = document.getElementsByClassName('form-control form-control-cart')
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for (var i = 0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
@@ -25,7 +25,8 @@ function ready() {
 }
 
 function removeCartItem(event) {
-    $(this).closest('tr').remove()
+    var buttonClicked = event.target
+    buttonClicked.parentElement.parentElement.remove()
     updateCartTotal()
 }
 
@@ -38,26 +39,34 @@ function quantityChanged(event) {
 }
 
 function addToCartClicked(event) {
-    var button = event.target
-    var shopItem = button.parentElement
-    document.getElementsByClassName('product_add_to_cart_button').click(function (event) {
-        if ($(event.target)[0].id = true) {
-            console.log('fuck you' + $(event.target)[0].id)
-        }
+    $(document).click(function (event) {
+        var stringElement = $(event.target)[0].id
+        var [image, name, price] = stringElement.split('-');
+        console.log(image, name, price)
+        addItemToCart(image, name, price)
+
     })
 }
 
+function addItemToCart(name, price, image) {
+    var cartRow = document.createElement('div')
+    cartRow.innerText = name
+    var cartItems = document.getElementsByClassName('cart-items')[0]
+    console.log(cartItems.name)
+}
 
 function updateCartTotal() {
-    var cartTable = document.getElementById('cart-table')
-    var cartRows = document.getElementById('cart-rows-body')
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
     var total = 0
-    for (var i = 1; i < (cartTable.rows.length - 3); i++) {
-        var price = parseFloat(document.getElementById('cart-table').rows[i].cells.namedItem('price-cell').innerHTML.replace('$', '')).toFixed(2)
-        var quantity = parseFloat(document.getElementById('cart-table').rows[i].getElementsByClassName('form-control-cart')[0].value).toFixed(2)
+    for (var i = 0; i < cartRows.length; i++) {
+        var cartRow = cartRows[i]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
+        var price = parseFloat(priceElement.innerText.replace('$',''))
+        var quantity = quantityElement.value
         total = total + (price * quantity)
     }
-    document.getElementById('total-cell-cart').cells[5].innerText = '$ ' + parseFloat(total).toFixed(2);
-    var shipping_cost = parseFloat(document.getElementById('shipping-cell-cart').cells[5].innerText.replace('$',''))
-    document.getElementById('total-and-shipping-cost').cells[5].innerText = '$ ' + parseFloat(total + shipping_cost).toFixed(2)
-    }
+    total = Math.round(total * 100)/100
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
