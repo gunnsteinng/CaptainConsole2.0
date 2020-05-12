@@ -1,11 +1,25 @@
 {% include 'top.html' %}
 {% block content %}
+    <section class="no-color create-product-sect" id="create-product">
+        <div class="container create-product-div">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 outer-create-product">
+                    <div class="inner-veit-ekki">
+                        <h1 class="create-product-heading1">Create product</h1>
+                        <h5 class="create-product-heading5">Fill out form below to register a new product</h5>
+                            <form class='form form-horizontal' action='{% url 'create_product' %}' method='post'>
+                                {% csrf_token %}
+                                {{ form }}
+                                <input type='submit' value='Create' class='btn btn-primary create-product-button' style='clear:both; margin:10px 0' />
+                            </form>
+                    </div>
+                </div>
+                <div class="col-lg-3">
 
-    <form class='form form-horizontal' action='{% url 'create_product' %}' method='post'>
-        {% csrf_token %}
-        {{ form }}
-        <input type='submit' value='Create' class='btn btn-primary pull-right' style='clear:both; margin:10px 0' />
-    </form>
-
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
 {% include 'bottom.html' %}

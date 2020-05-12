@@ -1,0 +1,50 @@
+
+.create-product-div {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    width: 3000px;
+}
+
+.outer-create-product {
+    border: solid #949494 2px;
+    max-height: 1000px;
+    width: auto;
+}
+
+.create-product-button {
+    border-radius: 20px;
+    color: #202527;
+    border: solid #949494 1px;
+    box-shadow: #949494 1px 1px;
+    background-image: linear-gradient(to bottom, #5ca4b4, #7aa5b1);
+    padding: 10px 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.create-product-heading1 {
+    padding-top: 115px;
+    padding-bottom: 30px;
+}
+
+.create-product-heading5 {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+#id_name, #id_description, #id_price, #id_category, #id_manufacturer{
+    margin: 0 auto 10px auto;
+    border: solid #949494 1px;
+    display: block;
+    width: 75%;
+    min-width: 275px;
+    max-width: 350px;
+}
+
+
+.form-register #id_image {
+    display: flex;
+    flex-direction: initial;
+    float: right;
+}
+
