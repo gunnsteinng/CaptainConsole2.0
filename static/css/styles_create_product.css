@@ -2,13 +2,18 @@
 .create-product-div {
     margin-top: 50px;
     margin-bottom: 70px;
-    width: 3000px;
+
+
+}
+
+.inner-create-prod-frame {
+    margin: auto;
 }
 
 .outer-create-product {
     border: solid #949494 2px;
     max-height: 1000px;
-    width: auto;
+    width: 3000px;
 }
 
 .create-product-button {
@@ -19,7 +24,8 @@
     background-image: linear-gradient(to bottom, #5ca4b4, #7aa5b1);
     padding: 10px 40px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    position: center;
+
 }
 
 .create-product-heading1 {
@@ -32,7 +38,7 @@
     padding-bottom: 25px;
 }
 
-#id_name, #id_description, #id_price, #id_category, #id_manufacturer{
+#id_name, #id_description, #id_price, #id_manufacturer, #id_image {
     margin: 0 auto 10px auto;
     border: solid #949494 1px;
     display: block;
@@ -41,10 +47,20 @@
     max-width: 350px;
 }
 
-
-.form-register #id_image {
-    display: flex;
-    flex-direction: initial;
-    float: right;
+label[for="id_on_sale"] {
+    display: block;
+    position: center;
+    padding-top: 10px;
 }
 
+#id_on_sale {
+    display: inline-flex;
+
+}
+
+label[for="id_category"] {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+
+}

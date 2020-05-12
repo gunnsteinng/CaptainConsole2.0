@@ -2,7 +2,6 @@
 .update-product-div {
     margin-top: 50px;
     margin-bottom: 70px;
-    width: 3000px;
 }
 
 .outer-update-product {
@@ -20,6 +19,7 @@
     padding: 10px 40px;
     margin-top: 20px;
     margin-bottom: 50px;
+    position: center;
 }
 
 .update-product-heading1 {
@@ -32,7 +32,7 @@
     padding-bottom: 25px;
 }
 
-#id_name, #id_description, #id_price, #id_category, #id_manufacturer{
+#id_name, #id_description, #id_price, #id_manufacturer, #id_category {
     margin: 0 auto 10px auto;
     border: solid #949494 1px;
     display: block;
@@ -41,9 +41,18 @@
     max-width: 350px;
 }
 
+label[for="id_on_sale"] {
+    display: block;
+    position: center;
+    padding-top: 10px;
+}
 
-.form-register #id_image {
+#id_on_sale {
+    display: inline-flex;
+}
+
+label[for="id_category"] {
     display: flex;
-    flex-direction: initial;
-    float: right;
+    flex-direction: column;
+    padding-top: 15px;
 }
