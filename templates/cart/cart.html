@@ -1,117 +1,37 @@
-<div class="container mb-4 top-bottom">
-    <div class="row">
-        <div class="col-12">
-            <div class="table-responsive table-line">
-                <table class="table table-striped" id="cart-table">
-                    <thead>
-                        <tr>
-                            <th scope="col"> </th>
-                            <th scope="col" class="text-left">Product</th>
-                            <th scope="col" class="text-left">Available</th>
-                            <th scope="col" class="text-center">Quantity</th>
-                            <th scope="col" class="text-right">Price</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="cart-rows-body">
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td class="text-left">Product Name Dada</td>
-                            <td class="text-left">In stock</td>
-                            <td>
-                                <div class="input-group">
-                                    <div class="input-group-prepend cart-input-group">
-
-                                    <input class="form-control
-                                    form-control-cart" id="cart-plus-minus" type=number value="1">
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="text-right price-cell" id="price-cell">$ 124.90</td>
-                            <td class="text-right"><button class="btn btn-sm
-                             btn-danger trash-button"><i class="fa
-                             fa-trash"></i>
-                            </button> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td class="text-left">Product Name Toto</td>
-                            <td class="text-left">In stock</td>
-                            <td>
-                                <div class="input-group">
-                                    <div class="input-group-prepend cart-input-group">
-
-                                    <input class="form-control
-                                    form-control-cart" id="cart-plus-minus" type=number value="2">
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="text-right price-cell" id="price-cell">$ 33.90</td>
-                            <td class="text-right"><button class="btn btn-sm
-                             btn-danger trash-button"><i class="fa fa-trash"></i>
-                            </button> </td>
-                        </tr>
-                        <tr>
-                            <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
-                            <td class="text-left">Product Name Titi</td>
-                            <td class="text-left">In stock</td>
-                            <td>
-                                <div class="input-group">
-                                    <div class="input-group-prepend cart-input-group">
-
-                                    <input class="form-control
-                                    form-control-cart" id="cart-plus-minus" type=number value="3">
-
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="text-right price-cell" id="price-cell">$ 70.00</td>
-                            <td class="text-right"><button class="btn btn-sm
-                             btn-danger trash-button"><i class="fa fa-trash"></i>
-                            </button> </td>
-                        </tr>
-                        <tr id="total-cell-cart">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td class="text-center">Sub-Total</td>
-                            <td class="text-right" >$ 255,90</td>
-                        </tr>
-                        <tr id="shipping-cell-cart">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Shipping</td>
-                            <td class="text-right">$ 6.90</td>
-                        </tr>
-                        <tr id="total-and-shipping-cost">
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>$ 0</strong></td>
-                        </tr>
-                    </tbody>
-                </table>
+<section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
-        </div>
-        <div class="col mb-2">
-            <div class="row">
-                <div class="col-sm-12  col-md-6 text-center">
-                    <button class="btn btn-lg btn-light
-                    large-button exit-button">Continue
-                        Shopping</button>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="https://i.pinimg.com/originals/a7/c7/50/a7c7507d0560b8be38b0f5124ca26838.jpg" width="100" height="100">
+                        <span class="cart-item-title">T-Shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
                 </div>
-                <div class="col-sm-12 col-md-6 text-center">
-                    <button class="btn btn-lg
-                    text-uppercase large-button confirm-button">Checkout</button>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="https://i.pinimg.com/originals/a7/c7/50/a7c7507d0560b8be38b0f5124ca26838.jpg" width="100" height="100">
+                        <span class="cart-item-title">Album 3</span>
+                    </div>
+                    <span class="cart-price cart-column">$9.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="2">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$39.97</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
