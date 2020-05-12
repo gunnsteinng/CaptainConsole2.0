@@ -57,3 +57,7 @@
     position: absolute;
     visibility: hidden;
 }
+
+.redeem-form {
+    border: none;
+}

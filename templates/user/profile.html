@@ -1,157 +1,174 @@
-<div class="container emp-profile">
-    <form method="post">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="profile-img">
-                    <img src="https://pbs.twimg.com/profile_images/741722371070001153/3GRLeFBk_400x400.jpg" alt=""/>
-                    <div class="file btn btn-lg btn-primary">
-                        Change Photo
-                        <input type="file" name="file"/>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="profile-head">
-                    <div class="sep-div">
-                        <h5>Gunnsteinn Geirsson</h5>
-                        <h6>VEIT EKKI HVORT ÞESSA LÍNU ÞURFI</h6>
-                    </div>
+{% load static %}
 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="home-tab"
-                               data-toggle="tab" href="#address" role="tab"
-                               aria-controls="home"
-                               aria-selected="true">Address</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab"
-                               data-toggle="tab" href="#profile" role="tab"
-                               aria-controls="profile"
-                               aria-selected="false">Search History</a>
-                        </li>
-                    </ul>
+{% include 'top.html' %}
+{% block content %}
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-img">
+                        <img src="{{ user.profile.image }}" alt=""/>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-2">
-                <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
+                <div class="col-md-6">
+                    <div class="profile-head">
+                        <div class="sep-div">
+                            <h5>User information for</h5>
+                            <h6>{{ user.first_name }} {{ user.last_name }}</h6>
+                        </div>
 
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="home-tab"
+                                   data-toggle="tab" href="#address" role="tab"
+                                   aria-controls="home"
+                                   aria-selected="true">Address</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab"
+                                   data-toggle="tab" href="#profile" role="tab"
+                                   aria-controls="profile"
+                                   aria-selected="false">Search History</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a href="{% url 'edit_profile' %}"
+                       class="profile-edit-btn">Edit Profile</a>
+                    <br><br>
+                    <a href="{% url 'create_staff' %}"
+                       class="profile-edit-btn">Create Staff</a>
+                    <br><br>
+                    <a href="{% url 'delete_staff' %}"
+                       class="profile-edit-btn">Delete Staff</a>
+                </div>
             </div>
-            <div class="col-md-8">
-                <div class="tab-content profile-tab" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Username</label>
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Username</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.username }}</p>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <p>gunnsteinng</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Name</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.first_name }} {{ user.last_name }}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Name</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Email</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.email }}</p>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <p>Gunnsteinn Geirsson</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Email</label>
-                            </div>
-                            <div class="col-md-4">
-                                <p>gunnsteinng@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Phone</label>
-                            </div>
-                            <div class="col-md-4">
-                                <p>(+354) 690 4920</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade show" id="address"
-                         role="tabpanel" aria-labelledby="address-tab">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Address</label>
-                            </div>
-                            <div class="col-md-4">
-                                <p>3452 Brookwater Circle</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Phone</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.phone }}</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Address 2</label>
+                        <div class="tab-pane fade show" id="address"
+                             role="tabpanel" aria-labelledby="address-tab">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Address</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.address_1 }}</p>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <p>--</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Address 2</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.address_2 }}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Country</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>City</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.city }}</p>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <p>USA</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Zip</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.zip }}</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>State</label>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>State</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.state }}</p>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <p>Orlando</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <label>Zip</label>
-                            </div>
-                            <div class="col-md-4">
-                                <p>32822</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row">
-                            <div class="col-md-8 search-heading">
-                                <label>Newest to oldest</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Super Mario Bros</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>The Legends of Zelda</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Super Nintendo Console</p>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Country</label>
+                                </div>
+                                <div class="col-md-4">
+                                    <p>{{ user.profile.country }}</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <p>Game Boy Console</p>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row">
+                                <div class="col-md-8 search-heading">
+                                    <label>Newest to oldest</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Super Mario Bros</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>The Legends of Zelda</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Super Nintendo Console</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p>Game Boy Console</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
-</div>
+        </form>
+    </div>
+{% include 'bottom.html' %}
+{% endblock %}

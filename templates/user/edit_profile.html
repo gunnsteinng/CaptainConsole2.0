@@ -1,0 +1,27 @@
+{% include 'top.html' %}
+{% block content %}
+    <section class="no-color login-section" id="login">
+        <div class="container login-register-div">
+            <div class="row">
+                <div class="col-lg-2">
+
+                </div>
+                <div class="col-lg-8 outer-edit-user">
+                    <h1 class="edit-profile-heading1">Update Information for</h1>
+                    <h3 class="edit-profile-heading2">{{ user.username }}</h3>
+                    <form class="form form-horizontal" action="{% url 'edit_profile' %}"
+                          method="post">
+                        {% csrf_token %}
+                        {{ form }}
+                        <input type="submit" class="btn btn-lg btn-primary
+                        large-button sign-in-button" value="Update Profile" />
+                    </form>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+{% include 'bottom.html' %}

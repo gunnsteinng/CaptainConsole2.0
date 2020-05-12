@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'checkout.apps.CheckoutConfig',
     'about_us.apps.AboutUsConfig',
     'contact_us.apps.ContactUsConfig',
+    'staff.apps.StaffConfig',
+    'admin_staff.apps.AdminStaffConfig',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +137,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+LOGIN_URL = '/permission/'
+LOGIN_REDIRECT_URL = '/user/'
