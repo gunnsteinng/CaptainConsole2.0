@@ -2,13 +2,15 @@
 .container-contact-us {
     width: 1000px;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 300px;
 }
 
 .send-button {
     background-image: linear-gradient(to bottom, #3874a0, #0794a1);
-    width: 285px;
-    margin-top: 40px;
-    font-size: 12px;
+    width: 450px;
+    font-size: 16px;
+    border-radius: 20px;
 }
 
 .send-button:hover {

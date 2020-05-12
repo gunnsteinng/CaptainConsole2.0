@@ -1,11 +1,25 @@
 {% include 'top.html' %}
 {% block content %}
-
-    <form class='form form-horizontal' action='{% url 'update_product' id %}' method='post'>
-        {% csrf_token %}
-        {{ form }}
-        <input type='submit' value='Update' class='btn btn-primary pull-right' style='clear:both; margin:10px 0' />
-    </form>
+<section class="no-color update-product-sect" id="update-product">
+        <div class="container update-product-div">
+            <div class="row">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 outer-update-product">
+                    <div class="inner-veit-ekki">
+                        <h1 class="create-product-heading1">Update-product</h1>
+                        <h5 class="create-product-heading5">Enter changes to product form below</h5>
+                        <form class='form form-horizontal, #id_name=name-new' action='{% url 'update_product' id %}' method='post'>
+                        {% csrf_token %}
+                        {{ form }}
+                        <input type='submit' value='Update' class='btn btn-primary update-product-buttom' style='clear:both; margin:10px 0' />
+                        </form>
+                    </div>
+                </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+    </div>
+</section>
 
 {% endblock %}
 {% include 'bottom.html' %}
