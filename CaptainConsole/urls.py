@@ -28,4 +28,6 @@ urlpatterns = [
     path('checkout/', include('checkout.urls')),
     path('about_us/', include('about_us.urls')),
     path('contact_us/', include('contact_us.urls')),
+    path('admin_login/', include('admin_staff.urls')),
+    path('staff_login/', include('staff.urls')),
 ]

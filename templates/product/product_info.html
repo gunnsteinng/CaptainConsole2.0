@@ -23,10 +23,12 @@ gera þegar bætt er í körfuna -->
                     <button class="btn btn-lg month-game add-to-cart" type="button">Add to Cart</button>
 
                 </div>
+                {% if user.is_staff %}
                 <div class="staff-button">
                     <a href="{% url 'delete_product' product.id %}" class="btn btn-lg month-game">Delete Product</a>
                     <a href="{% url 'update_product' product.id %}" class="btn btn-lg month-game">Update Product</a>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>

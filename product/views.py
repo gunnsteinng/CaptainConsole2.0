@@ -10,6 +10,7 @@ def index(request):
         products = [ {
             'id': x.id,
             'name': x.name,
+            'price': x.price,
             'description': x.description,
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search_filter)]

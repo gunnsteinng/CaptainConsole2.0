@@ -18,7 +18,7 @@ $(document).ready(function () {
                                 <h5 class="product-card-name">${d.name}</h5>
                                 <div class="card-body">
                                     <p class="text-truncate align-items-center">${d.description}</p>
-                                    <p>TODO Vantar Verð</p>
+                                    <p${d.price}</p>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="product-button-div product-info-button">
                                             <a href="/product/${d.id}" type="button" 

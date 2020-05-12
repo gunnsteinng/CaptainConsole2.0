@@ -23,9 +23,14 @@
         </h1>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li>
-                    <a href="/permission/">Log In</a>
-                </li>
+                {% if user.is_authenticated %}
+                    <li><a href="/user/">Profile</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                {% else %}
+                    <li><a href="{% url 'login' %}">Log In</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                {% endif %}
+
                 <li>
                     <a href="/cart/">My Cart</a>
                 </li>

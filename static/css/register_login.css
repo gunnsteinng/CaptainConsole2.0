@@ -6,7 +6,7 @@
 }
 
 .login-heading1 {
-    padding-top: 115px;
+    padding-top: 50px;
     padding-bottom: 30px;
 }
 
@@ -57,11 +57,7 @@
 
 .register-login-field {
     border-radius: 0;
-    border: solid #949494 2px;
-}
-
-.outer-register-login {
-    border: solid #949494 2px;
+    border: solid #949494 1px;
 }
 
 .register-login {
@@ -71,7 +67,7 @@
 
 .outer-register-login {
     border: solid #949494 2px;
-    max-height: 800px;
+    max-height: 1000px;
 }
 
 .inner-register-login {
@@ -80,4 +76,47 @@
 
 .middle-register-login {
     min-height: 35px;
+}
+
+.register-button {
+    margin-bottom: 50px;
+}
+
+.helptext {
+    display: none;
+}
+
+#id_first_name, #id_last_name, #id_username, #id_email {
+    margin: 0 auto 10px auto;
+    border: solid #949494 1px;
+    display: block;
+    width: 75%;
+    min-width: 275px;
+    max-width: 350px;
+}
+
+#id_password1 {
+    margin: 0 auto -10px auto;
+    border: solid #949494 1px;
+    display: block;
+    width: 75%;
+    min-width: 275px;
+    max-width: 350px;
+}
+
+#id_password2, #id_password {
+    margin: 0 auto 25px auto;
+    border: solid #949494 1px;
+    display: block;
+    width: 75%;
+    min-width: 275px;
+    max-width: 350px;
+}
+
+.sign-in-button {
+    margin-bottom: 50px;
+}
+
+.form-register #id_username {
+    margin: 0 auto -10px auto;
 }
