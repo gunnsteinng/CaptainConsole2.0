@@ -174,3 +174,21 @@ label[for="id_search_history"] {
 #id_is_staff, #id_is_superuser {
     margin: 0 10px 20px 10px;
 }
+
+.confirm-text {
+    color: #3b7498;
+    padding-bottom: 25px;
+}
+
+.delete-user-btn, .delete-user-btn-rtn {
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.delete-user-btn {
+    background-image: linear-gradient(to bottom, #007a1d, #1ca107);
+}
+
+.delete-user-btn-rtn {
+    background-image: linear-gradient(to bottom, #ab0601, #fb6707);
+}
