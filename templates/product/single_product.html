@@ -19,7 +19,9 @@
                 </div>
                 <div class="product-button-div product-buy-button ">
                     <button type="button" class="btn btn-sm
-                    btn-outline-secondary product-button add-to-cart product_add_to_cart_button" id="{{ product.name }}-{{ product.price }}-{{ product.productimage_set.first.image }}">Buy</button>
+                    btn-outline-secondary product-button add-to-cart product_add_to_cart_button"
+                            productID="{{ product.id }}"
+                            id="{{ product.name }}-{{ product.price }}-{{ product.productimage_set.first.image }}">Buy</button>
                 </div>
             </div>
         </div>

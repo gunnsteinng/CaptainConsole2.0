@@ -19,7 +19,9 @@ gera þegar bætt er í körfuna -->
                 <p class="product_text">{{ product.description }}</p>
                 <p class="price">Price: {{ product.price }} $</p>
                 <div class="offer-button">
-                    <button class="btn btn-lg month-game add-to-cart" type="button" id="{{ product.name }}-{{ product.price }}-{{ product.productimage_set.first.image }}">Add to Cart</button>
+                    <button class="btn btn-lg month-game add-to-cart" type="button"
+                            productID="{{ product.id }}"
+                            id="{{ product.name }}-{{ product.price }}-{{ product.productimage_set.first.image }}">Add to Cart</button>
 
                 </div>
                 {% if user.is_staff %}
