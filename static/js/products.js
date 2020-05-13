@@ -7,6 +7,7 @@ $(document).ready(function () {
             type: 'GET',
             success: function (resp) {
                 var newHtml = resp.data.map(d => {
+
                     return `<section class="product_section" id="product">
                                 <div class="card single-product">
                                     <img src="${d.firstImage}" 
@@ -43,3 +44,11 @@ $(document).ready(function () {
         })
     });
 });
+
+$(document).ready(function () {
+    $('input[type="radio"]').click(function () {
+        var the_manufac = $(this).val()
+        console.log(the_manufac)
+
+    })
+})
