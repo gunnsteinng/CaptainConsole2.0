@@ -1,10 +1,11 @@
 /*-------------- CONTACT US --------------*/
-.container-contact-us {
+.inner-container-contact-us {
     width: 1000px;
     margin: auto;
     padding-top: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 50px;
 }
+
 
 .send-button {
     background-image: linear-gradient(to bottom, #3874a0, #0794a1);
