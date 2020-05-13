@@ -58,3 +58,21 @@
 .description-center {
     padding-right: 0;
 }
+
+#id_name, #id_description, #id_price, #id_category, #id_manufacturer, #id_image {
+    margin: 0 auto 25px auto;
+    border: solid #949494 1px;
+    border-radius: 0;
+    display: block;
+    width: 75%;
+    min-width: 275px;
+    max-width: 550px;
+}
+
+label[for='id_category'] {
+    display: block;
+}
+
+#id_on_sale {
+    margin: 0 10px 20px 10px;
+}

@@ -40,6 +40,3 @@ def create_staff(request):
     return render(request, 'user/create_staff.html', {
         'form': CreateStaffForm()
     })
-
-def delete_staff(request):
-    return render(request, 'user/delete_staff.html')
