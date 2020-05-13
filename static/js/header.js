@@ -14,9 +14,9 @@ function scrollFunction() {
 }
 
 document.getElementById('games').onclick = function () {
-    location.href = '/product/?search_filter=sega';
+    location.href = '/product/?search_filter=game';
 };
 
 document.getElementById('consoles').onclick = function () {
-    location.href = '/product/?search_filter=doom';
+    location.href = '/product/?search_filter=console';
 };
