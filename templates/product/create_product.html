@@ -1,24 +1,21 @@
 {% include 'top.html' %}
 {% block content %}
     <section class="no-color create-product-sect" id="create-product">
-        <div class="container create-product-div">
+        <div class="container login-register-div">
             <div class="row">
-                <div class="col-lg-3"></div>
+                <div class="col-lg-3">
 
-                <div class="col-lg-6 outer-create-product">
-                    <div class="inner-create-prod-frame">
-
+                </div>
                 <div class="col-lg-6 outer-register-login">
                     <div class="inner-register-login">
 
                         <h1 class="create-product-heading1">Create product</h1>
-                        <h5 class="create-product-heading5">Fill out form below to register a new product</h5>
-                            <form class='form form-horizontal' action='{% url 'create_product' %}' method='post'>
+                        <h5 class="create-product-headirm-horizonng5">Fill out form below to register a new product</h5>
+                            <form class='form fotal' action='{% url 'create_product' %}' method='post'>
                                 {% csrf_token %}
                                 {{ form }}
                                 <input type='submit' value='Create Product'
-                                       class='btn btn-lg btn-primary
-                            large-button sign-in-button' style='clear:both; margin:10px 0' />
+                                       class='btn btn-lg month-game large-button' style='clear:both; margin:10px 0' />
                             </form>
                     </div>
                 </div>
