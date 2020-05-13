@@ -44,7 +44,7 @@
     display: block;
     width: 75%;
     min-width: 275px;
-    max-width: 350px;
+    max-width: 550px;
 }
 
 label[for="id_on_sale"] {

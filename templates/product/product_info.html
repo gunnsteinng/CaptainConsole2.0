@@ -27,6 +27,16 @@ gera þegar bætt er í körfuna -->
                     <a href="{% url 'delete_product' product.id %}" class="btn btn-lg month-game">Delete Product</a>
                     <a href="{% url 'update_product' product.id %}" class="btn btn-lg month-game">Update Product</a>
                 </div>
+                <div class="staff-button">
+                    <a href="{% url 'update_product' product.id %}"
+                       class="btn btn-lg month-game">Make Product of the Month</a>
+                </div>
+                <div class="staff-button">
+                    <a href="{% url 'update_product' product.id %}"
+                       class="btn btn-lg month-game">Offer of the Week 1</a>
+                    <a href="{% url 'update_product' product.id %}"
+                       class="btn btn-lg month-game">Offer of the Week 2</a>
+                </div>
                 {% endif %}
             </div>
         </div>

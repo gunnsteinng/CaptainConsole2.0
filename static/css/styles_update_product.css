@@ -32,7 +32,7 @@
     padding-bottom: 25px;
 }
 
-#id_name, #id_description, #id_price, #id_manufacturer, #id_category {
+#id_name, #id_description, #id_price, #id_manufacturer {
     margin: 0 auto 10px auto;
     border: solid #949494 1px;
     display: block;
