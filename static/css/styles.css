@@ -151,6 +151,10 @@ body {
     border-radius: 50%;
 }
 
+.carousel-item {
+  padding: 20px 15%;
+}
+
 /*-------------- PRODUCT SECTION --------------*/
 
 .product-div {
