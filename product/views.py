@@ -13,9 +13,10 @@ def index(request):
             'name': x.name,
             'price': x.price,
             'category': x.category.name,
+            'manufacturer': x.manufacturer.name,
             'description': x.description,
             'firstImage': x.productimage_set.first().image
-        } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter))]
+        } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter) | Q(manufacturer__name__icontains=search_filter))]
         return JsonResponse({'data': products})
     context = {'products': Product.objects.all().order_by('name')}
     return render(request, 'product/products.html', context)
