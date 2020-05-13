@@ -1,7 +1,8 @@
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404, redirect
 from product.forms.product_form import ProductCreateForm, ProductUpdateForm
-from product.models import Product, ProductImage
+from product.models import Product, ProductImage, ProductCategory
+from django.db.models import Q
 
 
 def index(request):
@@ -11,8 +12,8 @@ def index(request):
             'id': x.id,
             'name': x.name,
             'price': x.price,
+            'category': x.category.name,
             'description': x.description,
-            'price': x.price,
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(name__icontains=search_filter)]
         return JsonResponse({'data': products})

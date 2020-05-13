@@ -12,3 +12,11 @@ function scrollFunction() {
         document.getElementsByClassName("product-background")[0].style.padding = "0"
   }
 }
+
+document.getElementById('games').onclick = function () {
+    location.href = '/product/?search_filter=sega';
+};
+
+document.getElementById('consoles').onclick = function () {
+    location.href = '/product/?search_filter=doom';
+};
