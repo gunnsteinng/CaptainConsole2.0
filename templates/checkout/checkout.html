@@ -1,3 +1,4 @@
+{% load static %}
 <div class="checkout-overlay">
     {% include 'checkout/overlay_checkout.html' %}
 </div>
@@ -25,17 +26,6 @@
             {% include 'checkout/shipping_address.html' %}
             <hr class="mb-4 horizontal-line">
         </div>
-
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Shipping
-              address is different from my billing address</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">Save this information for next time</label>
-        </div>
-        <hr class="mb-4 horizontal-line">
 
         {% include 'checkout/payment.html' %}
 

@@ -13,6 +13,29 @@ $(document).ready(function () {
         })
     }
 
+     if (document.getElementById("cart-checkout")) {
+        getCartItemProductsJson().then(function(data) {
+            // Create the items
+            createCheckoutCartHTML(data.products)
+
+            // Update cart price
+            updateCartPrice(data.products)
+        })
+    }
+
+    function createCheckoutCartHTML(products) {
+        let itemContainer = $(".cart-items")
+
+        $.each(products, function(i, obj) {
+            let cartRow = $("<div>", {"class": "cart-row"});
+            let cartItem = $("<div>", {"class": "cart-item cart-column"});
+            let title = $("<span>", {"class": "cart-item-title", "text": getCartItemQuantity(obj.id) + " x " + obj.name});
+            let cartPrice = $("<span>", {"class": "cart-price cart-column", "text": "$" + obj.price });
+            cartItem.append(title)
+            itemContainer.append(cartRow.append(cartItem).append(cartPrice))
+        })
+    }
+
     function createCartItemHTML(products) {
         let itemContainer = $(".cart-items")
 
@@ -38,3 +61,5 @@ $(document).ready(function () {
         })
     }
 })
+
+
