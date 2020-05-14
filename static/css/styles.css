@@ -305,12 +305,21 @@ footer p {
 /*-------------- PRODUCT SECTION 3--------------*/
 /*-------------- FILTER PANEL --------------*/
 
-.form-check-input {
+.container-filter-section {
+    margin-top: 50px;
+}
+
+.form-check-input[type="radio"] {
     left: 45%;
+}
+
+.title {
+    font-size: 22px;
 }
 
 .filter-content {
     width: 100%;
+    margin-top: 12px;
     margin-bottom: 12px;
     font-size: 20px;
 }
@@ -318,10 +327,24 @@ footer p {
 .form-check-label {
     color: #efa90f;
     font-weight: bold;
-    margin-left: 30px;
-    text-align-all: left;
+    margin-left: 15px;
+}
+
+.card-group-item {
+    background: white;
+}
+
+.form-check-input[type="button"] {
+    border: solid #949494 1px;
+    box-shadow: #949494 1px 1px;
+    background-image: linear-gradient(to bottom, #efa90f, #f1e5c6);
+    padding: 5px 20px;
+    margin-top: 20px;
+    left: 15%;
+
 
 }
+
 
 /*
 .form-check-label {
@@ -331,3 +354,11 @@ footer p {
     left: 2%;
 }
 display: inline-flex;
+
+
+.container-filter-panel {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+ */
