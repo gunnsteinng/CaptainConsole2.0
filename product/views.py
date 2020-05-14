@@ -18,6 +18,20 @@ def index(request):
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter) | Q(manufacturer__name__icontains=search_filter))]
         return JsonResponse({'data': products})
+
+    if 'order_by' in request.GET:
+        order_by = request.GET['order_by']
+        products = [ {
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'category': x.category.name,
+            'manufacturer': x.manufacturer.name,
+            'description': x.description,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.all().order_by(order_by)]
+        return JsonResponse({'data': products})
+
     context = {'products': Product.objects.all().order_by('name')}
     return render(request, 'product/products.html', context)
 
