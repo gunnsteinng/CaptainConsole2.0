@@ -6,16 +6,35 @@
     padding-bottom: 50px;
 }
 
-.send-button {
-    background-image: linear-gradient(to bottom, #3874a0, #0794a1);
-    width: 450px;
-    font-size: 16px;
-    border-radius: 20px;
+.text-margin {
+    margin-left: 5px;
 }
 
-.send-button:hover {
-    background-color: #949494;
-    color: #ffffff;
-    border: solid #949494 2px;
+#form_name, #form_lastname, #form_email, #form_phone {
+    margin: 0 auto 25px 0;
+    border: solid #949494 1px;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    min-width: 275px;
+    max-width: 550px;
 }
 
+#form_message {
+    margin: 0 auto 25px 0;
+    border: solid #949494 1px;
+    border-radius: 0;
+    display: block;
+    width: 100%;
+    min-width: 275px;
+    max-width: 1500px;
+    height: 150px;
+}
+
+.confirmation-btn {
+    margin-top: 50px;
+}
+
+.confirmation-div {
+    margin: 150px auto 150px auto;
+}

@@ -42,13 +42,10 @@ INSTALLED_APPS = [
     'manufacturer.apps.ManufacturerConfig',
     'permission.apps.PermissionConfig',
     'product.apps.ProductConfig',
-    'shopping.apps.ShoppingConfig',
     'cart.apps.CartConfig',
     'checkout.apps.CheckoutConfig',
     'about_us.apps.AboutUsConfig',
     'contact_us.apps.ContactUsConfig',
-    'staff.apps.StaffConfig',
-    'admin_staff.apps.AdminStaffConfig',
 ]
 
 MIDDLEWARE = [

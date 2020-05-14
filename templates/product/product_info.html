@@ -1,11 +1,6 @@
 {% load static %}
 {% include 'top.html' %}
 {% block content %}
-<!-- Muna að setja virkni þannig að þetta hverfi og birtist eins og á að
-gera þegar bætt er í körfuna -->
-<div class="cart-overlay">
-    {% include 'overlay_cart.html' %}
-</div>
 <section class="product_section" id="product">
     <div class="container product-div">
         <div class="row">
@@ -17,7 +12,7 @@ gera þegar bætt er í körfuna -->
                 <h1 class="offer-heading product-name-for-cart">{{ product.name }}</h1>
                 <h2>Console: {{ product.manufacturer.name }}</h2>
                 <p class="product_text">{{ product.description }}</p>
-                <p class="price">Price: {{ product.price }} $</p>
+                <p class="price">Price: $ {{ product.price }}</p>
                 <div class="offer-button">
                     <button class="btn btn-lg month-game add-to-cart" type="button"
                             productID="{{ product.id }}"
