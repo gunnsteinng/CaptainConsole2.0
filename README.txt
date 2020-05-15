@@ -1,7 +1,7 @@
 Modules needed to install for the CaptainConsole project are:
-
-- pip install psycopg2
-- pip install django-countries
+    $ pip install psycopg2
+    $ pip install django-countries
+    $ pip install django-credit-cards
 
 
 For Teacher or Teacher Assistants to login for the first time use the following
