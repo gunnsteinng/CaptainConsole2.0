@@ -11,10 +11,17 @@ function scrollFunction() {
   }
 }
 
-document.getElementById('games').onclick = function () {
+$("#games").on("click",function () {
     location.href = '/product/?search_filter=game';
-};
+});
 
-document.getElementById('consoles').onclick = function () {
+$("#consoles").on("click", function () {
     location.href = '/product/?search_filter=console';
-};
+});
+
+$("#logout-button").on("click", function(e) {
+    e.preventDefault()
+    emptyCart()
+    $("#logout-button").unbind('click')
+    $("#logout-button")[0].click()
+})
