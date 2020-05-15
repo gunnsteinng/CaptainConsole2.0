@@ -325,9 +325,7 @@ footer p {
 }
 
 .form-check-label {
-    color: #efa90f;
-    font-weight: bold;
-    margin-left: 15px;
+    font-size: 1rem;
 }
 
 .card-group-item {
@@ -335,16 +333,23 @@ footer p {
 }
 
 .form-check-input[type="button"] {
-    border: solid #949494 1px;
-    box-shadow: #949494 1px 1px;
-    background-image: linear-gradient(to bottom, #efa90f, #f1e5c6);
     padding: 5px 20px;
     margin-top: 20px;
     left: 15%;
-
-
+    min-width: 115px;
 }
 
+.filter-content {
+    margin: auto;
+}
+
+.filter-height {
+    height: 200px;
+}
+
+.form-check-padding {
+    padding: 0;
+}
 
 /*
 .form-check-label {

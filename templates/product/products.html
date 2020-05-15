@@ -5,7 +5,7 @@
     {% include 'search_bar.html' %}
 </div>
 
-{% include 'product/filter_panel.html' %}
+
 
 
 <main role="main">
@@ -13,11 +13,20 @@
   <div class="album py-5">
     <div class="container">
       <div class="row row-cols-3" id="product_filter_stuff">
-          {% for product in products %}
-            <div class="col-md-4">
-                {% include 'product/single_product.html' with product=product %}
+          <div class="col-md-3">
+              {% include 'product/filter_panel.html' %}
+          </div>
+            <div class="col-md-9">
+              <div class="container">
+                  <div class="row">
+                      {% for product in products %}
+                    <div class="col-md-4">
+                        {% include 'product/single_product.html' with product=product %}
+                    </div>
+                  {% endfor %}
+                  </div>
+              </div>
             </div>
-          {% endfor %}
       </div>
     </div>
   </div>
