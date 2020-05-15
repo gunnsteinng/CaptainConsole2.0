@@ -4,35 +4,46 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="navbar-nav mr-auto" id="navbar-left">
-                    <li class="nav-item">
-                        <a class="nav-link" id="shop" href="/product">Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="special-offers" href="#">Special Offers</a>
-                    </li>
-                </ul>
-                <a class="navbar-brand mr-auto" href="/"><img src="/static/images/Logo.png" alt="logo"/></a>
-                <ul class="navbar-nav mr-auto" id="navbar-right">
-                    {% if user.is_authenticated %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="/user/">Profile</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="logout-button" href="{% url 'logout' %}">Logout</a>
-                        </li>
-                    {% else %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'login' %}">Log In</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'register' %}">Register</a>
-                        </li>
-                    {% endif %}
-                    <li class="nav-item">
-                        <a class="nav-link" id="cart-link" href="/cart/">My Cart</a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <div class="row header-row-width">
+                        <div class="col-md-4 header-left">
+                            <ul class="navbar-nav mr-auto" id="navbar-left">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="shop" href="/product">Shop</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="special-offers" href="#">Special Offers</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 header-center">
+                            <a class="navbar-brand mr-auto" href="/"><img src="/static/images/Logo.png" alt="logo"/></a>
+                        </div>
+                        <div class="col-md-4 header-right">
+                            <ul class="navbar-nav mr-auto mr-auto-right"
+                                id="navbar-right">
+                                {% if user.is_authenticated %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/user/">Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="logout-button" href="{% url 'logout' %}">Logout</a>
+                                    </li>
+                                {% else %}
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'login' %}">Log In</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="{% url 'register' %}">Register</a>
+                                    </li>
+                                {% endif %}
+                                <li class="nav-item">
+                                    <a class="nav-link" id="cart-link" href="/cart/">My Cart</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
