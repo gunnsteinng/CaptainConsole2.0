@@ -125,13 +125,19 @@ $(document).ready(function () {
                                 <div class="card-body">
                                     <p class="text-truncate align-items-center">${d.description}</p>
                                     <p>$ ${d.price}</p>
+                                    <div class="d-flex justify-content-between align-items-center">
                                         <div class="product-button-div product-info-button">
-                                            <a href="/product/${d.id}" type="button" 
-                                                class="btn btn-sm btn-outline-secondary
-                                                product-button">Info</a>
+                                            <a href="/product/{{ product.id }}" type="button"
+                                               class="btn btn-sm btn-outline-secondary
+                                               product-button">Info</a>
                                         </div>
-                                </div>
-                                </div>
+                                        <div class="product-button-div product-buy-button ">
+                                            <button type="button" class="btn btn-sm
+                                            btn-outline-secondary product-button add-to-cart product_add_to_cart_button"
+                                                    productID="{{ product.id }}"
+                                                    id="{{ product.name }}-{{ product.price }}-{{ product.productimage_set.first.image }}">Buy</button>
+                                        </div>
+                                    </div>
                                 </section>
                             </div>`
                         });

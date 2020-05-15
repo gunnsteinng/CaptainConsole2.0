@@ -100,7 +100,7 @@ function updateCartPrice(products) {
 }
 
 // Add to cart
-$(".add-to-cart").click(function() {
+$("body").on("click", ".add-to-cart", function() {
     let productID = $(this)[0].getAttribute("productID")
     addOrUpdateCart(productID, 1)
 

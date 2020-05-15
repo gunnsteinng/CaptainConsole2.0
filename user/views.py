@@ -4,6 +4,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from user.forms.profile_form import ProfileForm, ProfileUpdateForm
 from user.forms2 import CreateStaffForm
 from user.models import Profile
+from django_countries import countries
 
 def profile(request):
     profile = Profile.objects.filter(user=request.user).first()
