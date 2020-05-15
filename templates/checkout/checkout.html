@@ -1,7 +1,4 @@
 {% load static %}
-<div class="checkout-overlay">
-    {% include 'checkout/overlay_checkout.html' %}
-</div>
 <div class="container cart-div main-display">
   <div class="py-5 text-center">
     <h1 class="cart-heading">Checkout</h1>
@@ -34,7 +31,8 @@
           <div class="checkout-buttons">
               <div class="checkout-button">
                   <button class="btn btn-lg month-game
-                    large-button" type="submit" id="change-info-button">Change information</button>
+                    large-button change-button" type="submit"
+                          id="change-info-button">Change information</button>
 
                   <a href="{% url 'checkout_confirmation' %}" type="button"
                            class="btn btn-lg text-uppercase large-button

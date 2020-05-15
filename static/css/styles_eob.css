@@ -30,3 +30,20 @@
 .navbar .nav-item.dropdown .dropdown-menu:hover{
     display: block;
 }
+
+.header-row-width {
+    width: 100%;
+}
+
+.header-left, .header-center, .header-right {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.header-right {
+    padding-left: 7%;
+}
+
+#navbar-collapse {
+    padding-left: 5%;
+}

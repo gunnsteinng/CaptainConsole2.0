@@ -75,3 +75,12 @@
     color: #ffffff;
     border: none;
 }
+
+.cart-quantity {
+    margin-right: 0;
+}
+
+.shopping-cart-div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

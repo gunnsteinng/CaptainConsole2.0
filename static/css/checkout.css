@@ -69,3 +69,13 @@ label.error {
 .redeem-form {
     border: none;
 }
+
+.send-button {
+    background-image: linear-gradient(to bottom, #007a1d, #1ca107);
+    min-width: 250px;
+}
+
+.change-button {
+    background-image: linear-gradient(to bottom, #ab0601, #fb6707);
+    min-width: 250px;
+}
