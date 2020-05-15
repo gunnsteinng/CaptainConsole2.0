@@ -305,9 +305,6 @@ footer p {
 /*-------------- PRODUCT SECTION 3--------------*/
 /*-------------- FILTER PANEL --------------*/
 
-.container-filter-section {
-    margin-top: 50px;
-}
 
 .form-check-input[type="radio"] {
     left: 45%;
@@ -329,7 +326,12 @@ footer p {
 }
 
 .card-group-item {
-    background: white;
+    background: #e7ebe4;
+    border: solid #e7ebe4;
+}
+
+.remove-border {
+    border: none;
 }
 
 .form-check-input[type="button"] {
@@ -345,10 +347,6 @@ footer p {
 
 .filter-height {
     height: 200px;
-}
-
-.form-check-padding {
-    padding: 0;
 }
 
 /*

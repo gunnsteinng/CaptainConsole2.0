@@ -28,15 +28,17 @@
 
         <hr class="mb-4 horizontal-line">
         <div class="checkout-button to-checkout" >
-            <button class="btn btn-primary btn-lg large-button"
-                type="submit" id="to-checkout-button">Continue to checkout</button>
+            <button class="btn btn-lg month-game
+            large-button" type="submit" id="to-checkout-button">Continue to checkout</button>
         </div>
           <div class="checkout-buttons">
               <div class="checkout-button">
-                  <button class="btn btn-primary btn-lg large-button"
-                          type="submit" id="change-info-button">Change information</button>
-                  <button class="btn btn-primary btn-lg large-button"
-                          type="submit" id="place-order-button">Place order</button>
+                  <button class="btn btn-lg month-game
+                    large-button" type="submit" id="change-info-button">Change information</button>
+
+                  <a href="{% url 'checkout_confirmation' %}" type="button"
+                           class="btn btn-lg text-uppercase large-button
+                        send-button">Place order</a>
               </div>
           </div>
       </form>
