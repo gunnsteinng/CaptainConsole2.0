@@ -1,3 +1,13 @@
+*******************************************************************************
+**                                                                           **
+**                        Captain Console Web Store                          **
+**                                 Group 12                                  **
+**                                                                           **
+*******************************************************************************
+
+Link to git repository:
+    https://github.com/gunnsteinng/CaptainConsole2.0.git
+
 Modules needed to install for the CaptainConsole project are:
     $ pip install psycopg2
     $ pip install django-countries
@@ -20,3 +30,10 @@ All images and description texts for the products were taken from open source
 webpages, i.e. Wikipedia and such webpages. These images and information texts
 are for demonstration purposes only and Captain Console should use images and
 texts that the company has permission to use.
+
+
+Students:
+    Eva Ösp Björnsdóttir
+    Gunnsteinn Geirsson
+    Ingibjörg Guðmundsdóttir
+    Þorsteinn Atli Georgsson
