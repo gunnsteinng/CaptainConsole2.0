@@ -76,3 +76,20 @@ label[for='id_category'] {
 #id_on_sale {
     margin: 0 10px 20px 10px;
 }
+
+.offer-card-body {
+    padding-bottom: 100px;
+}
+
+.brand-card-body, .category-card-body {
+    padding-bottom: 25px;
+}
+
+.button-size {
+    width: 90%;
+    min-width: 185px;
+}
+
+.button-alignment {
+    text-align: center;
+}
