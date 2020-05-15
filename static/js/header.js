@@ -1,3 +1,5 @@
+
+//minimize navbar on scroll
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   if (document.body.scrollTop > 160 || document.documentElement.scrollTop > 160) {
@@ -11,13 +13,6 @@ function scrollFunction() {
   }
 }
 
-$("#games").on("click",function () {
-    location.href = '/product/?search_filter=game';
-});
-
-$("#consoles").on("click", function () {
-    location.href = '/product/?search_filter=console';
-});
 
 $("#logout-button").on("click", function(e) {
     e.preventDefault()

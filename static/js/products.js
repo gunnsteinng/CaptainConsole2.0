@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    /*This is the code for the search box */
+    //Get search box input and display
 
         $('#search-btn').on('click', function (e) {
             e.preventDefault();
@@ -50,22 +50,30 @@ $(document).ready(function () {
         });
     });
 
-    /* This is the code (for loop) for the filter and sort sort buttons */
+    //Function for all filter buttons and sort buttons
 
     var filterProductButtons = document.getElementsByClassName('btn-filter')
     for (var i = 0; i < filterProductButtons.length; i++) {
         var button = filterProductButtons[i]
         button.addEventListener('click', function () {
+
+            //get id of button clicked
             var the_id_i_need = this.id
+
+            //get value of button clicked
             var the_value_i_need = document.getElementById(the_id_i_need).value
 
             if (the_value_i_need == 'See All') {
                 the_value_i_need = ''
             }
 
+            //possible search parameters
             var our_product_and_category = ['', 'Atari', 'Nintendo', 'Playstation', 'SEGA', 'game', 'console']
+
+            //possible sort parameters
             var our_sort = ['price', 'name']
 
+            //Special offer button
             if (the_value_i_need == 'CLICK HERE') {
                 $.ajax({
                     url: '/product/?special_offer=True',
@@ -108,6 +116,8 @@ $(document).ready(function () {
                     }
                 })
 
+
+                // Filter buttons
             } else if (our_product_and_category.includes(the_value_i_need)) {
                 $.ajax({
                     url: '/product/?search_filter=' + the_value_i_need,
@@ -150,7 +160,7 @@ $(document).ready(function () {
                     }
                 })
 
-
+                //Sort buttons
             } else if (our_sort.includes(the_value_i_need)) {
                 $.ajax({
                     url: '/product/?order_by=' + the_value_i_need,
