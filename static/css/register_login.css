@@ -83,7 +83,9 @@
 }
 
 .helptext {
-    display: none;
+    margin: auto 15px 25px 15px;
+    display: block;
+    color: #949494;
 }
 
 #id_first_name, #id_last_name, #id_username, #id_email {
@@ -111,6 +113,10 @@
     width: 75%;
     min-width: 275px;
     max-width: 350px;
+}
+
+#id_password2 {
+    margin-bottom: -10px;
 }
 
 .sign-in-button {
