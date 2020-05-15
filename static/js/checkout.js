@@ -22,7 +22,6 @@ $(document).ready(function () {
                 address: "required",
                 city: "required",
                 country: "required",
-                state: "required",
                 zip: "required",
                 ccName: "required",
                 ccNumber: {
@@ -51,7 +50,6 @@ $(document).ready(function () {
                 address: "Please enter your address",
                 city: "Please enter your city",
                 country: "Please enter your country",
-                state: "Please enter your state",
                 zip: "Please enter your zip code",
                 ccName: "Please enter the name on the card",
                 ccCVV: "Please enter a valid 3 digit number"
@@ -81,5 +79,8 @@ $(document).ready(function () {
 
     $("#place-order-button").on("click", function(e) {
         e.preventDefault()
+        emptyCart()
+        $("#place-order-button").unbind('click')
+        $("#place-order-button")[0].click()
     })
 })
