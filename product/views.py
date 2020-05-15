@@ -14,10 +14,9 @@ def index(request):
             'price': x.price,
             'category': x.category.name,
             'manufacturer': x.manufacturer.name,
-            'on_sale': x.on_sale,
             'description': x.description,
             'firstImage': x.productimage_set.first().image
-        } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter) | Q(manufacturer__name__icontains=search_filter) | Q(on_sale__exact=search_filter))]
+        } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter) | Q(manufacturer__name__icontains=search_filter))]
         return JsonResponse({'data': products})
 
     if 'order_by' in request.GET:
@@ -31,6 +30,20 @@ def index(request):
             'description': x.description,
             'firstImage': x.productimage_set.first().image
         } for x in Product.objects.all().order_by(order_by)]
+        return JsonResponse({'data': products})
+
+    if 'special_offer' in request.GET:
+        special_offer = request.GET['special_offer']
+        products = [ {
+            'id': x.id,
+            'name': x.name,
+            'price': x.price,
+            'category': x.category.name,
+            'manufacturer': x.manufacturer.name,
+            'on_sale': x.on_sale,
+            'description': x.description,
+            'firstImage': x.productimage_set.first().image
+        } for x in Product.objects.filter(on_sale__exact=special_offer)]
         return JsonResponse({'data': products})
 
     context = {'products': Product.objects.all().order_by('name')}
