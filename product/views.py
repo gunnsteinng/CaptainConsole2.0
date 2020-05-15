@@ -14,9 +14,10 @@ def index(request):
             'price': x.price,
             'category': x.category.name,
             'manufacturer': x.manufacturer.name,
+            'on_sale': x.on_sale,
             'description': x.description,
             'firstImage': x.productimage_set.first().image
-        } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter) | Q(manufacturer__name__icontains=search_filter))]
+        } for x in Product.objects.filter(Q(name__icontains=search_filter) | Q(category__name__icontains=search_filter) | Q(manufacturer__name__icontains=search_filter) | Q(on_sale__exact=search_filter))]
         return JsonResponse({'data': products})
 
     if 'order_by' in request.GET:
