@@ -2,7 +2,7 @@
 <div class="checkout-overlay">
     {% include 'checkout/overlay_checkout.html' %}
 </div>
-<div class="container cart-div">
+<div class="container cart-div main-display">
   <div class="py-5 text-center">
     <h1 class="cart-heading">Checkout</h1>
     <h5 class="pre-checkout-text">To checkout please check if the items in your cart are
@@ -38,7 +38,7 @@
 
                   <a href="{% url 'checkout_confirmation' %}" type="button"
                            class="btn btn-lg text-uppercase large-button
-                        send-button">Place order</a>
+                        send-button" id="place-order-button">Place order</a>
               </div>
           </div>
       </form>
