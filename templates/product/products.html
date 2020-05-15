@@ -12,13 +12,13 @@
 <div class="product-background">
   <div class="album py-5">
     <div class="container main-display">
-      <div class="row row-cols-3" id="product_filter_stuff">
+      <div class="row row-cols-3">
           <div class="col-md-3">
               {% include 'product/filter_panel.html' %}
           </div>
             <div class="col-md-9">
               <div class="container">
-                  <div class="row">
+                  <div class="row" id="product_filter_stuff">
                       {% for product in products %}
                     <div class="col-md-4">
                         {% include 'product/single_product.html' with product=product %}
