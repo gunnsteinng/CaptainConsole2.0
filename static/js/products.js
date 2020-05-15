@@ -24,17 +24,11 @@ $(document).ready(function () {
                                 <div class="card-body">
                                     <p class="text-truncate align-items-center">${d.description}</p>
                                     <p>$ ${d.price}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
                                         <div class="product-button-div product-info-button">
                                             <a href="/product/${d.id}" type="button" 
                                                 class="btn btn-sm btn-outline-secondary
                                                 product-button">Info</a>
                                         </div>
-                                        <div class="product-button-div product-buy-button">
-                                            <button type="button" class="btn btn-sm
-                                            btn-outline-secondary product-button">Buy</button>
-                                        </div>
-                                    </div>
                                 </div>
                              </div>
                             </section>
@@ -93,17 +87,11 @@ $(document).ready(function () {
                                 <div class="card-body">
                                     <p class="text-truncate align-items-center">${d.description}</p>
                                     <p>$ ${d.price}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
                                         <div class="product-button-div product-info-button">
                                             <a href="/product/${d.id}" type="button" 
                                                 class="btn btn-sm btn-outline-secondary
                                                 product-button">Info</a>
                                         </div>
-                                        <div class="product-button-div product-buy-button">
-                                            <button type="button" class="btn btn-sm
-                                            btn-outline-secondary product-button">Buy</button>
-                                        </div>
-                                    </div>
                                 </div>
                                 </div>
                                 </section>
@@ -137,17 +125,11 @@ $(document).ready(function () {
                                 <div class="card-body">
                                     <p class="text-truncate align-items-center">${d.description}</p>
                                     <p>$ ${d.price}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
                                         <div class="product-button-div product-info-button">
                                             <a href="/product/${d.id}" type="button" 
                                                 class="btn btn-sm btn-outline-secondary
                                                 product-button">Info</a>
                                         </div>
-                                        <div class="product-button-div product-buy-button">
-                                            <button type="button" class="btn btn-sm
-                                            btn-outline-secondary product-button">Buy</button>
-                                        </div>
-                                    </div>
                                 </div>
                                 </div>
                                 </section>
@@ -180,17 +162,11 @@ $(document).ready(function () {
                                 <div class="card-body">
                                     <p class="text-truncate align-items-center">${d.description}</p>
                                     <p>$ ${d.price}</p>
-                                    <div class="d-flex justify-content-between align-items-center">
                                         <div class="product-button-div product-info-button">
                                             <a href="/product/${d.id}" type="button" 
                                                 class="btn btn-sm btn-outline-secondary
                                                 product-button">Info</a>
                                         </div>
-                                        <div class="product-button-div product-buy-button">
-                                            <button type="button" class="btn btn-sm
-                                            btn-outline-secondary product-button">Buy</button>
-                                        </div>
-                                    </div>
                                 </div>
                                 </div>
                                 </section>
