@@ -10,3 +10,6 @@ def index(request):
         return render(request, 'checkout/index.html', context)
     return render(request, 'checkout/index.html')
 
+def confirmation(request):
+    return render(request, 'checkout/confirmation.html')
+
