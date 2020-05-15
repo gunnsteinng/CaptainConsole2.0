@@ -1,74 +1,59 @@
 {% load static %}
 <h4 class="mb-3 sub-header">Shipping address</h4>
-<form class="needs-validation" novalidate>
+<form id="checkout-form">
 <div class="row">
   <div class="col-md-6 mb-3">
     <label for="firstName">First name</label>
-    <input class="form-control cart-input-field" id="firstName"
-           placeholder="" value="{{ user.first_name }}" required>
-    <div class="invalid-feedback">
-      Valid first name is required.
-    </div>
+    <input class="form-control cart-input-field" name="firstName" id="firstName"
+           placeholder="" value="{{ user.first_name }}">
   </div>
   <div class="col-md-6 mb-3">
     <label for="lastName">Last name</label>
-    <input class="form-control cart-input-field" id="lastName"
-           placeholder="" value="{{ user.last_name }}" required>
-    <div class="invalid-feedback">
-      Valid last name is required.
-    </div>
+    <input class="form-control cart-input-field" name="lastName" id="lastName"
+           placeholder="" value="{{ user.last_name }}">
   </div>
 </div>
 
 <div class="mb-3">
   <label for="email">Email</label>
-  <input type="email" class="form-control cart-input-field" id="email"
+  <input type="email" class="form-control cart-input-field" name="email" id="email"
          placeholder="you@example.com" value="{{ user.email }}">
-  <div class="invalid-feedback">
-    Please enter a valid email address for shipping updates.
-  </div>
 </div>
 
 <div class="mb-3">
   <label for="address">Address</label>
-  <input class="form-control cart-input-field" id="address" placeholder="1234 Main St" value="" required>
-  <div class="invalid-feedback">
-    Please enter your shipping address.
-  </div>
+  <input class="form-control cart-input-field" name="address" id="address" placeholder="1234 Main St" value="{{ profile.address_1 }}">
 </div>
 
 <div class="mb-3">
   <label for="address2">Address 2</label>
-  <input class="form-control cart-input-field" id="address2"
-         placeholder="Apartment or suite">
+  <input class="form-control cart-input-field" name="address2" id="address2"
+         placeholder="Apartment or suite" value="{{ profile.address_2 }}">
+</div>
+
+<div class="mb-3">
+  <label for="city">City</label>
+  <input class="form-control cart-input-field" name="city" id="city"
+         placeholder="City" value="{{ profile.city }}">
 </div>
 
 <div class="row">
   <div class="col-md-5 mb-3">
     <label for="country">Country</label>
-    <select class="custom-select d-block w-100 cart-input-field" id="country" required>
+    <select class="custom-select d-block w-100 cart-input-field" name="country" id="country" value="{{ profile.country }}">
       <option value="">Choose...</option>
-      <option>United States</option>
+        {% for country in countries %}
+            <option value="{{ country.name }}">{{ country.code }} - {{ country.name }}</option>
+        {% endfor %}
     </select>
-    <div class="invalid-feedback">
-      Please select a valid country.
-    </div>
   </div>
   <div class="col-md-4 mb-3">
     <label for="state">State</label>
-    <select class="custom-select d-block w-100 cart-input-field" id="state" required>
-      <option value="">Choose...</option>
-      <option>California</option>
-    </select>
-    <div class="invalid-feedback">
-      Please provide a valid state.
-    </div>
+    <input class="form-control cart-input-field" name="state" id="state"
+         placeholder="State" value="{{ profile.state }}">
   </div>
   <div class="col-md-3 mb-3">
     <label for="zip">Zip</label>
-    <input class="form-control cart-input-field" id="zip" placeholder="" required>
-    <div class="invalid-feedback">
-      Zip code required.
-    </div>
+    <input class="form-control cart-input-field" name="zip" id="zip" placeholder="" value="{{ profile.zip }}">
   </div>
 </div>

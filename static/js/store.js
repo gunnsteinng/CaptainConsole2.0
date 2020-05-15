@@ -1,5 +1,5 @@
 function emptyCart() {
-    $.each(localStorage, function(id, quantity){
+    return $.each(localStorage, function(id, quantity){
         let splitID = id.split('-')
         if (splitID.length === 2 && splitID[0] === 'product') {
             localStorage.removeItem(id)

@@ -5,9 +5,11 @@
 <div class="container cart-div">
   <div class="py-5 text-center">
     <h1 class="cart-heading">Checkout</h1>
-    <h5>To checkout please check if the items in your cart are
+    <h5 class="pre-checkout-text">To checkout please check if the items in your cart are
         correct (on the right) and if so fill in the form below (all fields
         are mandatory).</h5>
+      <h5 class="post-checkout-text">Please carefully review the information below before
+      selecting "Place Order" as that will finalize the order.</h5>
   </div>
 
   <div class="row">
@@ -22,18 +24,21 @@
 
         <hr class="mb-4 horizontal-line">
 
-        <div class="shipping-address-div">
-            {% include 'checkout/shipping_address.html' %}
-            <hr class="mb-4 horizontal-line">
-        </div>
-
         {% include 'checkout/payment.html' %}
 
         <hr class="mb-4 horizontal-line">
-        <div class="checkout-button">
+        <div class="checkout-button to-checkout" >
             <button class="btn btn-primary btn-lg large-button"
-                type="submit">Continue to checkout</button>
+                type="submit" id="to-checkout-button">Continue to checkout</button>
         </div>
+          <div class="checkout-buttons">
+              <div class="checkout-button">
+                  <button class="btn btn-primary btn-lg large-button"
+                          type="submit" id="change-info-button">Change information</button>
+                  <button class="btn btn-primary btn-lg large-button"
+                          type="submit" id="place-order-button">Place order</button>
+              </div>
+          </div>
       </form>
     </div>
   </div>
